@@ -1,5 +1,13 @@
 import React from "react";
+import { Header } from "./components/Header";
+import "./App.css";
+import { Hero } from "./components/Hero";
 
 export const App = () => {
-  return <div></div>;
+  return (
+    <>
+      <Header />
+      <Hero />
+    </>
+  );
 };
