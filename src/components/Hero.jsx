@@ -10,7 +10,7 @@ export const Hero = () => {
             <div>
               Hi i'm <span>SHEKHAR SINGH</span>
             </div>
-            <div>Front-end Developer</div>
+            <div>Soft. Engineer</div>
             <p>I love coding</p>
             <button class="flex_center">
               <a href="./assests/shekhar_cv.pdf" download="shekhar_cv.pdf">

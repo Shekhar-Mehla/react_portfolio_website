@@ -7,7 +7,7 @@ export const Header = () => {
         <div className="left flex_center">
           <h2>SHEKHAR SINGH</h2>
           <div className="divider"></div>
-          <div className="job_title">Front end developer</div>
+          <div className="job_title">Soft. Engineer</div>
         </div>
         <label htmlFor="hambergerinput">
           <i className="fa-solid fa-bars"></i>

@@ -65,7 +65,7 @@ export const Projects = () => {
                   </a>
                 </div>
                 <div class="project_info">
-                  <h4>Travel bolog</h4>
+                  <h4>Time Wise</h4>
                   <h5>
                     Techstack: <span>HTML, CSS,JavaScript</span>
                   </h5>
@@ -86,7 +86,7 @@ export const Projects = () => {
                   </a>
                 </div>
                 <div class="project_info">
-                  <h4>Travel bolog</h4>
+                  <h4>Portfolio</h4>
                   <h5>
                     Techstack: <span>HTML, CSS,JavaScript</span>
                   </h5>
