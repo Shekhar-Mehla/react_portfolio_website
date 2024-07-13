@@ -3,6 +3,20 @@
   box-sizing: border-box;
   margin: 0px;
 }
+body {
+  font-family: "Bodoni Moda", serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Bodoni Moda", serif;
+  /* You can specify different weights or styles as needed */
+}
+
+p {
+  font-family: "Bodoni Moda", serif;
+}
 
 label:hover {
   cursor: pointer;
