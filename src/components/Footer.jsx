@@ -1,43 +1,66 @@
 import React from "react";
 import { Link } from "react-router-dom";
-export const Footer = () => {
-  return (
-    <div>
-      {" "}
-      <footer class="flex_center">
-        <div class="footer_container flex">
-          <div class="top_section flex">
-            <div class="page_links flex">
-              <span>Links</span>
 
-              <ul>
-                <li>
-                  <Link to="/skills">Skills</Link>
-                </li>
-                <li>
-                  <Link to="/projects">Projects</Link>
-                </li>
-                <li>
-                  <Link to="/About">About us</Link>
-                </li>
-              </ul>
-            </div>
-            <div class="socail_links flex_center">
-              <span>Social links</span>
-              <a href="">
-                <i class="fa-brands fa-linkedin"></i>
-              </a>
-              <a href="">
-                <i class="fa-brands fa-facebook"></i>
-              </a>
-              <a href="">
-                <i class="fa-brands fa-github"></i>
-              </a>
-            </div>
+const Footer = () => {
+  return (
+    <footer className="footer">
+      <div className="footer-container">
+        <div className="top-section">
+          <div className="footer-column">
+            <h3 className="footer-heading">Links</h3>
+            <ul className="footer-links">
+              <li>
+                <Link to="/skills">Skills</Link>
+              </li>
+              <li>
+                <Link to="/projects">Projects</Link>
+              </li>
+              <li>
+                <Link to="/about">About Us</Link>
+              </li>
+            </ul>
           </div>
-          <div class="bottom_section">@ &copy;copyright reserved by me</div>
+          <div className="footer-column">
+            <h3 className="footer-heading">Social Links</h3>
+            <ul className="social-links">
+              <li>
+                <a
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="fab fa-linkedin"></i> LinkedIn
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="fab fa-facebook"></i> Facebook
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="fab fa-github"></i> GitHub
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </footer>
-    </div>
+        <div className="bottom-section">
+          <p className="copyright">
+            &copy; 2024 Your Name. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
   );
 };
+
+export default Footer;

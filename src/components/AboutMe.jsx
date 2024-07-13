@@ -4,12 +4,12 @@ import myimage from "../assets/resumepick.png";
 export const AboutMe = () => {
   return (
     <div>
-      <section class="about_me flex_center" id="about-me">
-        <div class="about_me_container flex_center">
+      <section className="about_me flex_center" id="about-me">
+        <div className="about_me_container flex_center">
           <span>About Me</span>
-          <div class="about_me_card flex">
+          <div className="about_me_card flex">
             <img src={myimage} alt="my photo" />
-            <div class="about_me_card_content flex">
+            <div className="about_me_card_content flex">
               <h3>Shekhar Singh</h3>
 
               <p>
@@ -26,7 +26,7 @@ export const AboutMe = () => {
 
               <h4>Geelong, Victoria</h4>
               <h4>Interest</h4>
-              <div class="interest flex">
+              <div className="interest flex">
                 <h5>coding</h5>
                 <h5>Cricket</h5>
                 <h5>Reading</h5>

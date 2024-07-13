@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export const Header = () => {
+const Header = () => {
   return (
     <div>
       <header className="flex">
@@ -11,7 +11,7 @@ export const Header = () => {
           <div className="job_title">Soft. Engineer</div>
         </div>
         <label htmlFor="hambergerinput">
-          <i className="fa-solid fa-bars"></i>
+          <i className="fas fa-bars"></i>
         </label>
         <input
           type="checkbox"
@@ -44,3 +44,4 @@ export const Header = () => {
     </div>
   );
 };
+export default Header;

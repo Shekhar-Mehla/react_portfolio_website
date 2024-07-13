@@ -400,7 +400,7 @@ li {
   #hambergerinput:checked + .nav_container {
     left: 75vw;
     transition: 0.2s;
-    top: 9.8vh;
+    top: 10.8vh;
   }
   header {
     align-items: center;
@@ -664,4 +664,52 @@ li {
   .contact_me span {
     background-color: unset;
   }
+}
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-column {
+  flex: 1;
+  margin-right: 40px;
+}
+
+.footer-heading {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.footer-links,
+.social-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-links li,
+.social-links li {
+  margin-bottom: 8px;
+}
+
+.social-links a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.social-links a i {
+  margin-right: 8px;
 }
