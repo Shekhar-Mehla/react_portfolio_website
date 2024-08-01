@@ -1,47 +1,43 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Navbar, Nav, Container, Button, Form } from "react-bootstrap";
 
 const Header = () => {
   return (
-    <div>
-      <header className="flex">
-        <div className="left flex_center">
-          <h2>SHEKHAR SINGH</h2>
-          <div className="divider"></div>
-          <div className="job_title">Soft. Engineer</div>
-        </div>
-        <label htmlFor="hambergerinput">
-          <i className="fas fa-bars"></i>
-        </label>
-        <input
-          type="checkbox"
-          id="hambergerinput"
-          style={{ display: "none" }}
-        />
-        <nav className="nav_container right flex">
-          <ul className="flex">
-            <li>
-              <Link to="/Home">Home</Link>
-            </li>
-            <li>
-              <Link to="/Skills">Skills</Link>
-            </li>
-            <li>
-              <Link to="/projects">Projects</Link>
-            </li>
-            <li>
-              <Link to="/About">About </Link>
-            </li>
-            <li>
-              <Link to="/Contact">Contact </Link>
-            </li>
-          </ul>
-        </nav>
-        <label htmlFor="dark_mode">
-          <i className="fa-solid fa-circle-half-stroke"></i>
-        </label>
-      </header>
-    </div>
+    <Navbar bg="light" expand="lg" className="shadow-lg header-animation">
+      <Container>
+        <Navbar.Brand as={Link} to="/" className="d-flex align-items-center">
+          <div className="d-flex flex-column">
+            <h2 className="mb-0">SHEKHAR SINGH</h2>
+            <div className="text-muted">Software Engineer</div>
+          </div>
+        </Navbar.Brand>
+
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="mr-auto">
+            <Nav.Link as={Link} to="/Home">
+              Home
+            </Nav.Link>
+            <Nav.Link as={Link} to="/Skills">
+              Skills
+            </Nav.Link>
+            <Nav.Link as={Link} to="/projects">
+              Projects
+            </Nav.Link>
+            <Nav.Link as={Link} to="/About">
+              About
+            </Nav.Link>
+            <Nav.Link as={Link} to="/Contact">
+              Contact
+            </Nav.Link>
+          </Nav>
+          <Form className="d-flex align-items-center ml-auto"></Form>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 };
+
 export default Header;

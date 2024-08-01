@@ -1,4 +1,5 @@
 import React from "react";
+
 import socialmediaImage from "../assets/socail_media.jpg";
 import calculatorImage from "../assets/calculator.png";
 import timeSaver from "../assets/todo_app.jpg";
@@ -6,96 +7,83 @@ import cvProjectImg from "../assets/cv_photo.png";
 
 export const Projects = () => {
   return (
-    <div>
-      <section className="projects flex_center" id="projects">
-        <span>My Projects</span>
-        <div className="project_list flex">
-          <div className="project_list_item1 flex">
-            <div className="project_card flex">
-              <img src={calculatorImage} alt="calculator" />
-              <div className="card_content flex">
-                <div className="card_link flex_center">
-                  <a href="">
-                    <i className="fa-brands fa-chrome"></i>
-                  </a>
-                  <a href="">
-                    <i className="fa-brands fa-github"></i>
-                  </a>
-                </div>
-                <div className="project_info">
-                  <h4>calculator</h4>
-                  <h5>
-                    Techstack: <span>HTML, CSS,JavaScript</span>
-                  </h5>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="project_list_item2 flex">
-            <div className="project_card flex">
-              <img src={socialmediaImage} alt="socail media project photo" />
-              <div className="card_content flex">
-                <div className="card_link flex_center">
-                  <a href="">
-                    <i className="fa-brands fa-chrome"></i>
-                  </a>
-                  <a href="">
-                    <i className="fa-brands fa-github"></i>
-                  </a>
-                </div>
-                <div className="project_info">
-                  <h4>Socail mediia</h4>
-                  <h5>
-                    Techstack: <span>HTML, CSS,JavaScript,Restfull Api</span>
-                  </h5>
+    <section className="projects py-5" id="projects">
+      <div className="container">
+        <h2 className="section-title text-center mb-5">My Projects</h2>
+        <div className="row">
+          {projectsData.map((project, index) => (
+            <div
+              className="col-lg-3 col-md-4 col-sm-6 mb-4"
+              key={project.title}
+            >
+              <div
+                className={`project-card animate__animated animate__fadeInUp animate__delay-${index}s`}
+              >
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="img-fluid"
+                />
+                <div className="card-content">
+                  <div className="card-links mb-3">
+                    <a
+                      href={project.liveLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i className="fa-brands fa-chrome"></i>
+                    </a>
+                    <a
+                      href={project.githubLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i className="fa-brands fa-github"></i>
+                    </a>
+                  </div>
+                  <div className="project-info">
+                    <h4>{project.title}</h4>
+                    <h5>
+                      Techstack: <span>{project.techstack}</span>
+                    </h5>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="project_list_item3 flex">
-            <div className="project_card flex">
-              <img src={timeSaver} alt="travl blog project photo" />
-              <div className="card_content flex">
-                <div className="card_link flex_center">
-                  <a href="">
-                    <i className="fa-brands fa-chrome"></i>
-                  </a>
-                  <a href="">
-                    <i className="fa-brands fa-github"></i>
-                  </a>
-                </div>
-                <div className="project_info">
-                  <h4>Time Wise</h4>
-                  <h5>
-                    Techstack: <span>HTML, CSS,JavaScript</span>
-                  </h5>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="project_list_item4 flex">
-            <div className="project_card flex">
-              <img src={cvProjectImg} alt="travl blog project photo" />
-              <div className="card_content flex">
-                <div className="card_link flex_center">
-                  <a href="">
-                    <i className="fa-brands fa-chrome"></i>
-                  </a>
-                  <a href="">
-                    <i className="fa-brands fa-github"></i>
-                  </a>
-                </div>
-                <div className="project_info">
-                  <h4>Portfolio</h4>
-                  <h5>
-                    Techstack: <span>HTML, CSS,JavaScript</span>
-                  </h5>
-                </div>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 };
+
+const projectsData = [
+  {
+    title: "Calculator",
+    image: calculatorImage,
+    techstack: "HTML, CSS, JavaScript",
+    liveLink: "", // Add the actual link
+    githubLink: "", // Add the actual link
+  },
+  {
+    title: "Social Media",
+    image: socialmediaImage,
+    techstack: "HTML, CSS, JavaScript, RESTful API",
+    liveLink: "", // Add the actual link
+    githubLink: "", // Add the actual link
+  },
+  {
+    title: "Time Wise",
+    image: timeSaver,
+    techstack: "HTML, CSS, JavaScript",
+    liveLink: "", // Add the actual link
+    githubLink: "", // Add the actual link
+  },
+  {
+    title: "Portfolio",
+    image: cvProjectImg,
+    techstack: "HTML, CSS, JavaScript",
+    liveLink: "", // Add the actual link
+    githubLink: "", // Add the actual link
+  },
+];
