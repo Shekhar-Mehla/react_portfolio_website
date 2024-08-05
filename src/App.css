@@ -283,3 +283,121 @@ a {
   position: relative;
   z-index: 1;
 }
+
+/* About Me Section */
+.about_me_card {
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.about_me_card:hover {
+  transform: scale(1.05);
+}
+
+.about_me_image {
+  max-width: 100%;
+  height: auto;
+  border: 5px solid #fff; /* White border for better contrast */
+}
+
+/* Card and Contact Styles */
+.card-body {
+  background-color: #f8f9fa;
+}
+
+.card-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #343a40;
+}
+
+.card-text {
+  font-size: 1.1rem;
+  color: #495057;
+}
+
+.badge {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.contact-card {
+  flex: 1;
+  max-width: 200px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-link {
+  text-decoration: none;
+  color: #333;
+}
+
+.contact-link:hover {
+  color: #007bff; /* Bootstrap primary color */
+}
+
+.display-4 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h5 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+h4 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Footer */
+footer {
+  background-color: var(--bg-color);
+  color: var(--white-color);
+  padding: 3rem 1rem;
+}
+
+.footer-heading {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  border-bottom: 2px solid #007bff; /* Highlight color */
+  padding-bottom: 0.5rem;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: var(--white-color);
+  display: flex;
+  align-items: center;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.footer-link i {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.footer-link:hover {
+  color: #007bff; /* Bootstrap primary color */
+  transform: scale(1.1);
+}
+
+.bg-dark {
+  background-color: #343a40 !important;
+}
+
+.text-light {
+  color: #f8f9fa !important;
+}

@@ -4,7 +4,7 @@ SHEKHAR PORTFOLIO WEBSITE
 
 ## Overview
 
-Project Name is a modern web application designed to provide an engaging and user-friendly experience. The application features a sleek interface with a focus on usability and performance.
+My portfolio  is a modern web application designed to provide an engaging and user-friendly experience. The application features a sleek interface with a focus on usability and performance.
 
 ## Features
 
