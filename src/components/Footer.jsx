@@ -69,12 +69,13 @@ const Footer = () => {
                   href="mailto:support@example.com"
                   className="text-light footer-link"
                 >
-                  <i className="fas fa-envelope me-2"></i> support@example.com
+                  <i className="fas fa-envelope me-2"></i>{" "}
+                  shekharmehla279@gmail.com
                 </a>
               </li>
               <li>
-                <a href="tel:+123456789" className="text-light footer-link">
-                  <i className="fas fa-phone-alt me-2"></i> +1 234 567 89
+                <a href="tel:+61473346823" className="text-light footer-link">
+                  <i className="fas fa-phone-alt me-2"></i> +61473346823
                 </a>
               </li>
             </ul>

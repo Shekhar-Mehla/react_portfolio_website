@@ -1,5 +1,6 @@
 import React from "react";
 import myimage from "../assets/resumepick.png";
+import mycv from "../assets/shekhar_cv.pdf";
 import { Container, Row, Col, Button } from "react-bootstrap";
 
 export const Hero = () => {
@@ -19,7 +20,7 @@ export const Hero = () => {
               <Button
                 className="hero-button"
                 variant="primary"
-                href="./assets/shekhar_cv.pdf"
+                href={mycv}
                 download="shekhar_cv.pdf"
               >
                 Download CV

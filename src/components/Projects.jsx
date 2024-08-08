@@ -1,9 +1,40 @@
 import React from "react";
 
 import socialmediaImage from "../assets/socail_media.jpg";
-import calculatorImage from "../assets/calculator.png";
+import calculatorImage from "../assets/calculator.jpg";
 import timeSaver from "../assets/todo_app.jpg";
-import cvProjectImg from "../assets/cv_photo.png";
+import Bakery from "../assets/bakery.jpg";
+
+const projectsData = [
+  {
+    title: "Bakery",
+    image: Bakery,
+    techstack: "HTML, CSS, JavaScript, RESTful API,Reactjs,Bootstrap",
+    liveLink: "",
+    githubLink: "",
+  },
+  {
+    title: "Time Wise",
+    image: timeSaver,
+    techstack: "HTML, CSS, JavaScript, RESTful API,Reactjs,Bootstrap",
+    liveLink: "", // Add the actual link
+    githubLink: "", // Add the actual link
+  },
+  {
+    title: "Socail Media",
+    image: socialmediaImage,
+    techstack: "HTML, CSS, JavaScript, RESTful API,Reactjs,Bootstrap",
+    liveLink: "", // Add the actual link
+    githubLink: "", // Add the actual link
+  },
+  {
+    title: "Calculator",
+    image: calculatorImage,
+    techstack: "HTML, CSS, JavaScript, RESTful API,Reactjs,Bootstrap",
+    liveLink: "", // Add the actual link
+    githubLink: "", // Add the actual link
+  },
+];
 
 export const Projects = () => {
   return (
@@ -56,34 +87,3 @@ export const Projects = () => {
     </section>
   );
 };
-
-const projectsData = [
-  {
-    title: "Calculator",
-    image: calculatorImage,
-    techstack: "HTML, CSS, JavaScript",
-    liveLink: "", // Add the actual link
-    githubLink: "", // Add the actual link
-  },
-  {
-    title: "Social Media",
-    image: socialmediaImage,
-    techstack: "HTML, CSS, JavaScript, RESTful API",
-    liveLink: "", // Add the actual link
-    githubLink: "", // Add the actual link
-  },
-  {
-    title: "Time Wise",
-    image: timeSaver,
-    techstack: "HTML, CSS, JavaScript",
-    liveLink: "", // Add the actual link
-    githubLink: "", // Add the actual link
-  },
-  {
-    title: "Portfolio",
-    image: cvProjectImg,
-    techstack: "HTML, CSS, JavaScript",
-    liveLink: "", // Add the actual link
-    githubLink: "", // Add the actual link
-  },
-];
