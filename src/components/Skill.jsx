@@ -69,14 +69,6 @@ export const Skill = () => {
       isCustom: true,
       logo: MongodbLogo,
     },
-    {
-      name: "Chef",
-      icon: "custom-icon",
-      bgColor: "bg-warning",
-      animation: "animate__fadeInUp",
-      isCustom: true,
-      logo: ChefLogo,
-    },
   ];
 
   return (
